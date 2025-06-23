@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HATIYA SHOのホームページ</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      font-family: "Noto Sans JP", sans-serif;
+      background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      color: #000;
+      height: 100vh;
+    }
+    nav {
+      width: 220px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+    }
+    nav a {
+      display: block;
+      margin-bottom: 1.2rem;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem 3rem;
+      overflow-y: auto;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #ccc;
+      margin: 2rem 0 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.6rem 1rem;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    img.profile {
+      float: left;
+      width: 140px;
+      margin-right: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#top">トップ</a>
+  <a href="#profile">プロフィール</a>
+  <a href="#movies">映画出演</a>
+  <a href="#dramas">ドラマ出演</a>
+  <a href="#stage">舞台出演</a>
+  <a href="#admin">管理者</a>
+</nav>
+
+<main>
+  <section id="top">
+    <h1>HATIYA SHO ホームページ</h1>
+    <p>こちらは俳優・HATIYA SHOの公式プロフィールページです。</p>
+  </section>
+
+  <section id="profile">
+    <h2>プロフィール</h2>
+    <img src="sho.jpg" alt="HATIYA SHO" class="profile">
+    <p>HATIYA SHOはジャングル出身の俳優。舞台・映画・ドラマを中心に活躍。存在感のある演技力と独特の雰囲気で注目を集める。</p>
+  </section>
+
+  <section id="movies">
+    <h2>映画出演</h2>
+    <table>
+      <tr><th>年</th><th>タイトル</th><th>役名</th></tr>
+      <tr><td>2024</td><td>ゴリラキング</td><td>主演・ショウ</td></tr>
+      <tr><td>2023</td><td>暴力</td><td>やられ役</td></tr>
+    </table>
+  </section>
+
+  <section id="dramas">
+    <h2>ドラマ出演</h2>
+    <table>
+      <tr><th>年</th><th>作品名</th><th>役名</th></tr>
+      <tr><td>2023</td><td>終わらない森</td><td>ハンター役</td></tr>
+      <tr><td>2022</td><td>給食じゃんけん</td><td>最強役</td></tr>
+    </table>
+  </section>
+
+  <section id="stage">
+    <h2>舞台出演</h2>
+    <table>
+      <tr><th>年</th><th>公演名</th><th>配役</th></tr>
+      <tr><td>2022</td><td>純と輝き</td><td>主役</td></tr>
+    </table>
+  </section>
+
+  <section id="admin">
+    <h2>管理者</h2>
+    <p>このページの管理はHATIYA SHOの脳みそによって行われています。</p>
+  </section>
+</main>
+
+</body>
+</html>
